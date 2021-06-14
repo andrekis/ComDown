@@ -59,7 +59,7 @@ def chapMode(data):
 	data=data
 	link= data['link']
 	path= data['path']
-	chapDownloaded= data['chapter']-1
+	chapDownloaded= int(data['chapter'])-1
 	if (link!=''):
 		#scrapping chapter links
 		links=choose(link, True)
@@ -86,4 +86,4 @@ def chapMode(data):
 				obj['downloaded-series']=lin+1
 				setdata(obj)
 				refresh()
-		# status('Series download complete', 'green')
+		status('Series download complete', 'green')
