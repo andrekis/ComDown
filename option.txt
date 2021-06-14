@@ -1,0 +1,14 @@
+{
+"comment":"ComDown",
+
+
+"comment_2":"1.Single Link 2.Multi Link(txt path require, each line will be considered as a link) 3.ChapterLink",
+"chapter":"1",
+"comment_3":"dont change chapter if you dont need to. It defines which chapter should it start downloading, default value is 1 cause it always start download from start, for example if you want to start download from 5th chapter add 5 in chapter value",
+"workingMode":"3",
+"downloaded":"0",
+"thread": "3",
+"link": "https://allporncomic.com/porncomic/insatiable-husband-ohnice/",
+"path": "/home/imon/.test/temp",
+"textPath":"links.txt"
+}
