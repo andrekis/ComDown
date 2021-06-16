@@ -26,6 +26,8 @@ def generate(link):
 		soup=BeautifulSoup(page,'html.parser')
 		title=soup.title.string
 		title=title[title.index('-')+1: title.rindex('All')-3]
+		if '|' in title:
+			title= title[0: title.rindex('|')]+'-'+title[title.rindex('|')+1:title.rindex('')]
 		# saving title
 		obj= getdata()
 		obj['subtitle']= colored(title, 'yellow')
@@ -63,6 +65,8 @@ def chapGenerate(link):
 		soup=BeautifulSoup(page, 'html.parser')
 		title=soup.title.string
 		title=title[title.index(''): title.rindex('Porn Comic')]
+		if '|' in title:
+			title= title[0: title.rindex('|')]+'-'+title[title.rindex('|')+1:title.rindex('')]
 		# saving title
 		obj= getdata()
 		obj['title']=colored(title, 'yellow')
